@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linkedin Online Network Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html" class="logo"><img src="img/logo.png"></a>
+
+                <div class="search-box">
+                    <img src="img/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="#" class="active-link"><img src="img/home.png"><span>Home</span></a></li>
+                    <li><a href="#"><img src="img/network.png"><span>My Network</span></a></li>
+                    <li><a href="#"><img src="img/jobs.png"><span>Jobs</span></a></li>
+                    <li><a href="#"><img src="img/message.png"><span>Messaging</span></a></li>
+                    <li><a href="#"><img src="img/notification.png"><span>Notifications</span></a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <div class="online">
+                    <img src="img/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                </div>
+            </div>
+            <!-- -------Profile drop down menu------- -->
+            <div class="profile-menu-wrap" id="profilemenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="img/user-1.png" >
+                        <div>
+                            <h3>Sumit Patil</h3>
+                            <a href="profle.html">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/feedback.png">
+                        <p>Give feedback</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/display.png">
+                        <p>Display & Accessiblity</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- -----------Navbar--End------- -->
+
+        <div class="container">
+            <!-- --------left-sidebar-------- -->
+            <div class="left-sidebar">
+                <div class="sidebar-profile-box">
+                    <img src="img/cover-pic.png" width="100%">
+
+                    <div class="sidebar-profile-info">
+                        <img src="img/user-1.png">
+                        <h1>Sumit Patil</h1>
+                        <h3>Web Developer at Facebook</h3>
+                        <ul>
+                            <li>Your profile viwes <span>677</span></li>
+                            <li>Your post viwes <span>11677</span></li>
+                            <li>Your connections<span>377</span></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-profile-link">
+                        <a href="#"><img src="img/items.png">My items</a>
+                        <a href="#"><img src="img/premium.png">Try premium</a>
+                    </div>
+                </div>
+                <div class="sidebar-activity" id="sidebarActivity">
+                    <h3>RECENT</h3>
+                    <a href="#"><img src="img/recent.png">Web Developement</a>
+                    <a href="#"><img src="img/recent.png">Code Better</a>
+                    <a href="#"><img src="img/recent.png">User Interface</a>
+                    <a href="#"><img src="img/recent.png">Project Management</a>
+                    <a href="#"><img src="img/recent.png">Group Learning</a>
+                    <h3>GROUPS</h3>
+                    <a href="#"><img src="img/group.png">Web design group</a>
+                    <a href="#"><img src="img/group.png">HTML & CSS Learners</a>
+                    <a href="#"><img src="img/group.png">Python and JavaScrpit group</a>
+                    <h3>HASHTAG</h3>
+                    <a href="#"><img src="img/hashtag.png">Webdeveloper</a>
+                    <a href="#"><img src="img/hashtag.png">Onlinelearners</a>
+                    <a href="#"><img src="img/hashtag.png">Userinterface</a>
+                    <div class="discover-more-links">
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <p id="showMoreLink" onclick="togglesidebarActivity()">Show more <b>+</b></p>
+            </div>
+            <!-- ---------main-content-------- -->
+            <div class="main-content">
+                <div class="create-post">
+                    <div class="create-post-input">
+                        <img src="img/user-1.png" >
+                        <textarea rows="2" placeholder="Write a post"></textarea>
+                    </div>
+                    <div class="create-post-links">
+                        <li><img src="img/photo.png" >Photo</li>
+                        <li><img src="img/video.png" >Video</li>
+                        <li><img src="img/event.png" >event</li>
+                        <li>Post</li>
+                    </div>
+                </div>
+                <div class="sort-by">
+                    <hr>
+                    <p>Sort by <span>Top <img src="img/down-arrow.png" ></span></p>
+                </div>
+                <div class="post">
+                    <div class="post-creator">
+                        <img src="img/user-3.png" >
+                        <div>
+                            <h1>Isha Leo</h1>
+                            <small>Founder of Leo group | Angle investor</small>
+                            <small>12 hours ago</small>
+                        </div>
+                    </div>
+                    <p>The success of every website depends upon the search engine optimisation and digital marketing strategy</p>
+                    <img src="img/post-image-1.png" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" >
+                            <img src="img/love.png" >
+                            <img src="img/clap.png" >
+                            <span class="liked-users">Abhinav Sharma and 1022 Others</span>
+                        </div>
+                        <div>
+                            <span>234 Comments &middot; 45 Shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="img/like.png" >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png" >
+                            <span>Comment</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/share.png" >
+                            <span>Share</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/send.png" >
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-creator">
+                        <img src="img/user-4.png" >
+                        <div>
+                            <h1>John Leo</h1>
+                            <small>Founder of Leo group | Angle investor</small>
+                            <small>2 hours ago</small>
+                        </div>
+                    </div>
+                    <p>The success of every website depends upon the search engine optimisation and digital marketing strategy</p>
+                    <img src="img/post-image-4.png" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" >
+                            <img src="img/love.png" >
+                            <img src="img/clap.png" >
+                            <span class="liked-users">Ishan Sharma and 102 Others</span>
+                        </div>
+                        <div>
+                            <span>23 Comments &middot; 4 Shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="img/like.png" >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png" >
+                            <span>Comment</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/share.png" >
+                            <span>Share</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/send.png" >
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-creator">
+                        <img src="img/user-3.png" >
+                        <div>
+                            <h1>Isha Leo</h1>
+                            <small>Founder of Leo group | Angle investor</small>
+                            <small>12 hours ago</small>
+                        </div>
+                    </div>
+                    <p>The success of every website depends upon the search engine optimisation and digital marketing strategy</p>
+                    <img src="img/post-image-3.png" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" >
+                            <img src="img/love.png" >
+                            <img src="img/clap.png" >
+                            <span class="liked-users">Hardik Sharma and 91022 Others</span>
+                        </div>
+                        <div>
+                            <span>24 Comments &middot; 435 Shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="img/like.png" >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png" >
+                            <span>Comment</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/share.png" >
+                            <span>Share</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/send.png" >
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-creator">
+                        <img src="img/user-2.png" >
+                        <div>
+                            <h1>Isha Leo</h1>
+                            <small>Founder of Leo group | Angle investor</small>
+                            <small>12 hours ago</small>
+                        </div>
+                    </div>
+                    <p>The success of every website depends upon the search engine optimisation and digital marketing strategy</p>
+                    <img src="img/post-image-2.png" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" >
+                            <img src="img/love.png" >
+                            <img src="img/clap.png" >
+                            <span class="liked-users">Abhinav Jha and 10822 Others</span>
+                        </div>
+                        <div>
+                            <span>5234 Comments &middot; 845 Shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="img/like.png" >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png" >
+                            <span>Comment</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/share.png" >
+                            <span>Share</span>
+                        </div>
+                        <div  class="post-activity-link">
+                            <img src="img/send.png" >
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------right-sidebar----- -->
+            <div class="right-sidebar">
+                <div class="sidebar-news">
+                    <img src="img/more.png" class="info-icon">
+                    <h3>Trending News</h3>
+                    <a href="#">High demand skills for 2022.</a>
+                    <span>4hr ago &middot; 10,678 readers</span>
+
+                    <a href="#">Roadmap for web developer.</a>
+                    <span>14hr ago &middot; 50,678 readers</span>
+
+                    <a href="#">Best you tube channel to learn coding.</a>
+                    <span>8hr ago &middot; 21,678 readers</span>
+
+                    <a href="#">How to become millionaire at the age 25?</a>
+                    <span>2hr ago &middot; 1678 readers</span>
+
+                    <a href="#">Best freelancer website for 2022.</a>
+                    <span>9hr ago &middot; 20,678 readers</span>
+
+                    <a href="#" class="read-more-link">Read More</a>
+                </div>
+                <div class="sidebar-ad">
+                    <small>Ad &middot; &middot; &middot; </small>
+                    <p>Master the 5 principle of web design</p>
+                    <div>
+                        <img src="img/user-1.png">
+                        <img src="img/mi-logo.png">
+                    </div>
+                    <b>Brand And Demand in Xiaomi</b>
+                    <a href="#" class="ad-link">Learn More</a>
+                </div>
+                <div class="sidebar-useful-links">
+                    <a href="#">About</a>
+                    <a href="#">Accessiblity</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Get App</a>
+                    <a href="#">More</a>
+                    <div class="copyright-mgs">
+                        <img src="img/logo.png">
+                        <p> Linkedin &#169; 2022. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let profilemenu = document.getElementById("profilemenu");
+
+                function toggleMenu(){
+                    profilemenu.classList.toggle("open-menu");
+                }
+            </script>
+            <script>
+                let sidebarActivity = document.getElementById("sidebarActivity");
+                let MoreLink = document.getElementById("showMoreLink");
+
+                function togglesidebarActivity(){
+                    sidebarActivity.classList.toggle("open-activity");
+                
+                if (sidebarActivity.classList.contains("open-activity")){
+                    MoreLink.innerHTML = "Show less <b> - </b>";
+                }
+                else {
+                   MoreLink.innerHTML = "Show more <b> + </b>";
+                }
+            }
+            </script>
+    </body>
+
+</html>

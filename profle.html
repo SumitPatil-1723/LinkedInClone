@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linkedin Online Network Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html" class="logo"><img src="img/logo.png"></a>
+
+                <div class="search-box">
+                    <img src="img/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="#" class="active-link"><img src="img/home.png"><span>Home</span></a></li>
+                    <li><a href="#"><img src="img/network.png"><span>My Network</span></a></li>
+                    <li><a href="#"><img src="img/jobs.png"><span>Jobs</span></a></li>
+                    <li><a href="#"><img src="img/message.png"><span>Messaging</span></a></li>
+                    <li><a href="#"><img src="img/notification.png"><span>Notifications</span></a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <div class="online">
+                    <img src="img/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                </div>
+            </div>
+            <!-- -------Profile drop down menu------- -->
+            <div class="profile-menu-wrap" id="profilemenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="img/user-1.png">
+                        <div>
+                            <h3>Sumit Patil</h3>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/feedback.png">
+                        <p>Give feedback</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/display.png">
+                        <p>Display & Accessiblity</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- -----------Navbar--End------- -->
+
+        <div class="container">
+            <div class="profile-main">
+                <div class="profile-container">
+                    <img src="img/cover-pic.png" width="100%">
+                    <div class="profile-container-inner">
+                        <img src="img/user-1.png" class="profile-pic">
+                        <h1>Sumit Patil</h1>
+                        <b>Web developer at Facebook | Intern at a Microsoft</b>
+                        <p>Pune, Maharastra India &middot; <a href="#">Contact Info</a></p>
+                        <div class="mutual-connection">
+                            <img src="img/user-2.png">
+                            <span>10 mutual connections: Jignesh Joshi</span>
+                        </div>
+                        <div class="profile-btn">
+                            <a href="#" class="frist-btn"><img src="img/connect.png">Connect</a>
+                            <a href="#"><img src="img/chat.png">Message</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-description">
+                    <h2>About</h2>
+                    <p>The success of every websites depends upon on search engine optimisation and digital marketing
+                        strategy. If you are on frist page of all major search engines then you are ahead among your
+                        competitors </p>
+                    <a href="#" class="see-more-link">See more..</a>
+                </div>
+                <div class="profile-description">
+                    <h2>Experience</h2>
+                    <div class="profile-desc-row">
+                        <img src="img/microsoft.png">
+                        <div>
+                            <h3>Lead Front-End Developer</h3>
+                            <b>Microsoft &middot; Full-time</b>
+                            <b>Jun 2022 - Present &middot; 4 Months</b>
+                            <p>Web developers create and maintain websites. They are also responsible for the site's
+                                technical aspects, such as its performance and capacity, which are measures of a
+                                website's speed and how much traffic the site can handle. In addition, web developers
+                                may create content for the site.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="profile-desc-row">
+                        <img src="img/slack.png">
+                        <div>
+                            <h3>Full stack Developer</h3>
+                            <b>slack &middot; Intern</b>
+                            <b>Jun 2020 - Jun 2022 &middot; 1 Year</b>
+                            <p>Web developers create and maintain websites. They are also responsible for the site's
+                                technical aspects, such as its performance and capacity, which are measures of a
+                                website's speed and how much traffic the site can handle. In addition, web developers
+                                may create content for the site.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="profile-desc-row">
+                        <img src="img/google.png">
+                        <div>
+                            <h3>Web Developer</h3>
+                            <b>Google Inc &middot; Project</b>
+                            <b>Jun 2019 - Jan 2020 &middot; 6 Months</b>
+                            <p>Web developers create and maintain websites. They are also responsible for the site's
+                                technical aspects, such as its performance and capacity, which are measures of a
+                                website's speed and how much traffic the site can handle. In addition, web developers
+                                may create content for the site.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="experience-link">Show all Experiences <img src="img/right-arrow.png"></a>
+                </div>
+
+                <div class="profile-description">
+                    <h2>Education</h2>
+                    <div class="profile-desc-row">
+                        <img src="img/stanford.png">
+                        <div>
+                            <h3>Stanford University</h3>
+                            <b>BSEE, Computer Engineering</b>
+                            <b>2015 - 2019</b>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="profile-desc-row">
+                        <img src="img/mit.png">
+                        <div>
+                            <h3>Harvard University</h3>
+                            <b>Masters Computer Engineering</b>
+                            <b>2019 - 2022</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-description">
+                    <h2>Skills</h2>
+                    <a href="#" class="skills-btn">Web developer</a>
+                    <a href="#" class="skills-btn">Leadership</a>
+                    <a href="#" class="skills-btn">Entreperneur</a>
+                    <a href="#" class="skills-btn">Coding</a>
+                    <a href="#" class="skills-btn">Communications </a>
+                    <a href="#" class="skills-btn">Educator </a>
+                </div>
+                <div class="profile-description">
+                    <h2>Languages</h2>
+                    <a href="#" class="Language-btn">English</a>
+                    <a href="#" class="Language-btn">Hindi</a>
+                    <a href="#" class="Language-btn">Marathi</a>
+
+                </div>
+            </div>
+
+
+            <!-- -----profile sidebar------ -->
+            <div class="profile-sidebar">
+                <div class="sidebar-ad">
+                    <small>Ad &middot; &middot; &middot; </small>
+                    <p>Master the 5 principle of web design</p>
+                    <div>
+                        <img src="img/user-1.png">
+                        <img src="img/mi-logo.png">
+                    </div>
+                    <b>Brand And Demand in Xiaomi</b>
+                    <a href="#" class="ad-link">Learn More</a>
+                </div>
+                <div class="sidebar-people">
+                    <h3>People you may know</h3>
+                    <div class="sidebar-people-row">
+                        <img src="img/user-2.png" >
+                        <div>
+                            <h2>Jack Roy</h2>
+                            <p>Educator at udamy</p>
+                            <a href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-people-row">
+                        <img src="img/user-1.png" >
+                        <div>
+                            <h2>Bean Grils</h2>
+                            <p>Full stack developer at facbook</p>
+                            <a href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-people-row">
+                        <img src="img/user-3.png" >
+                        <div>
+                            <h2>Isha leo</h2>
+                            <p>web developer at linkedin</p>
+                            <a href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-people-row">
+                        <img src="img/user-4.png" >
+                        <div>
+                            <h2>Sayani Shaja</h2>
+                            <p>Actress</p>
+                            <a href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-people-row">
+                        <img src="img/user-5.png" >
+                        <div>
+                            <h2>James clear</h2>
+                            <p>Author</p>
+                            <a href="#">Connect</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="profile-footer">
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Get App</a>
+                <a href="#">More</a>
+                <div class="copyright-mgs">
+                    <img src="img/logo.png">
+                    <p> Linkedin &#169; 2022. All right reserved</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            let profilemenu = document.getElementById("profilemenu");
+
+            function toggleMenu() {
+                profilemenu.classList.toggle("open-menu");
+            }
+        </script>
+    </body>
+
+</html>
